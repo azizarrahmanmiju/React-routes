@@ -13,6 +13,7 @@ function App() {
         <Link className='link' to="/services">Services</Link>
         <Link className='link' to="/about">About</Link>
         <Link className='link' to="/Contact">Contact</Link>
+        <Link className='link' to="/users">Users</Link>
       </div>
       <Outlet />
       <footer> <h2>THIS IS FOOTER</h2></footer>

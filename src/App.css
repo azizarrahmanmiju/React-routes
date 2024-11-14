@@ -48,3 +48,12 @@
   color: aquamarine;
   margin: 10px 20px;
 }
+
+.singleUser {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  border: 2px solid orange;
+  padding: 20px;
+  border-radius: 20px;
+}
