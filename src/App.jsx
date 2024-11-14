@@ -1,5 +1,5 @@
 
-import { Link, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import './App.css'
 
 function App() {
@@ -8,15 +8,19 @@ function App() {
     <div>
       <h5>My Wbsite</h5>
 
-      <div >
-        <Link className='link' to="/">Home</Link>
-        <Link className='link' to="/services">Services</Link>
-        <Link className='link' to="/about">About</Link>
-        <Link className='link' to="/Contact">Contact</Link>
-        <Link className='link' to="/users">Users</Link>
+      <div className='header' >
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/Contact">Contact</NavLink>
+        <NavLink to="/users">Users</NavLink>
       </div>
-      <Outlet />
-      <footer> <h2>THIS IS FOOTER</h2></footer>
+      <Outlet>
+
+
+      </Outlet>
+
+      <footer> <div className='footer'><h2>THIS IS FOOTER</h2></div></footer>
     </div>
   )
 }
