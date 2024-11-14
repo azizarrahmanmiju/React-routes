@@ -10,16 +10,18 @@ const Users = () => {
     return (
         <div>
             <h1>Total Users : {usersdata.length}</h1>
-            {
-                usersdata.map((user, index) => {
-                    return (
-                        <User key={index} singleuser={user}></User>
+            <div className="container">
+                {
+                    usersdata.map((user, index) => {
+                        return (
+                            <User key={index} singleuser={user}></User>
+                        )
+
+
+                    }
                     )
-
-
                 }
-                )
-            }
+            </div>
 
         </div>
     );
